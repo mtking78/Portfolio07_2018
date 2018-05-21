@@ -1,3 +1,11 @@
+/* Global */
+.section-title {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 4.25rem;
+    font-weight: bolder;
+    padding: 30px;
+}
+
 /* Navbar */
 /******************************************/
 
@@ -6,23 +14,32 @@
 
 /* About Me */
 /******************************************/
+/* #about {
+} */
 
 /* Portfolio */
 #portfolio {
+    color: #fff;
     text-align: center;
+    background-image: url("../images/pool_table.png");
+    background-repeat: repeat;
 }
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
-    color: #f4511e;
+    color: #fff;
 }
 
 .carousel-indicators li {
-    border-color: #f4511e;
+    border-color: #fff;
 }
 
 .carousel-indicators li.active {
-    background-color: #f4511e;
+    background-color: #fff;
+}
+
+.carousel-control {
+    text-shadow: 0 2px 2px rgba(0,0,0,0.8);
 }
 
 .item h4 {
@@ -38,7 +55,10 @@
 }
 
 .item img {
-    width: 300px;
+    width: 600px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #222;
 }
 /******************************************/
 
@@ -49,9 +69,10 @@
 
 #contact > .email {
     text-decoration: none;
-    color: black;
-    padding: 3px;
-    border: 2px solid black;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    border: 2px solid #fff;
     border-radius: 8px;
 }
 

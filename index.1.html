@@ -23,53 +23,47 @@
         <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
         <!-- CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"> -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
         <!-- JQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
         <!-- Javascript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
     </head>
 
     <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
 
         <!-- Navbar -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="#">Logo</a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#about">ABOUT ME</a></li>
-                        <li><a href="#portfolio">PORTFOLIO</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+            <a class="navbar-brand" href="#">Matt King</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
         <!-- About Me -->
         <div id="about" class="container-fluid">
-            <h1 class="section-title">Matt King</h1>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-1">
-                        <!-- Placeholder -->
-                    </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <h2 class="section-title">About Me</h2>
                         <p>Hello, I'm Matt.  I'm a native of Tucson, Arizona and graduate from the University of Arizona's School of Business.
                         <br>
@@ -78,7 +72,7 @@
                     <div class="col-md-2">
                         <!-- Placeholder -->
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-5">
                         <h2 class="section-title">Skills</h2>
                         <p>My web development skills include, but are not limited to:</p>
                         <div class="table-responsive">
@@ -128,9 +122,6 @@
                             <i class="devicon-sequelize-plain-wordmark colored"></i>
                         </ul> -->
                     </div>
-                    <div class="col-md-1">
-                        <!-- Placeholder -->
-                    </div>
                 </div>
             </div>
 
@@ -139,11 +130,10 @@
         <!-- Portfolio -->
         <div id="portfolio" class="container-fluid">
             <h2 class="section-title">Portfolio</h2>
-            <p>Here are examples of projects and applications I have made or worked on. </p>
             <!-- Carousel Display -->
             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
                 <!-- Indicators -->
-                <ol class="carousel-indicators">
+                <ul class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -155,78 +145,78 @@
                     <li data-target="#myCarousel" data-slide-to="8"></li>
                     <li data-target="#myCarousel" data-slide-to="9"></li>
                     <li data-target="#myCarousel" data-slide-to="10"></li>
-                </ol>
+                </ul>
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
 
-                    <div class="item">
+                    <div class="carousel-item active">
                         <h2>Beer Rewards</h2>
                         <img src="assets/images/beerRewards.png" alt="Beer Rewards" data-toggle="modal" data-target="#beerRewardsModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item active">
+                    <div class="carousel-item">
                         <h2>Sequelize Burger</h2>
                         <!-- <a href="https://boiling-garden-47959.herokuapp.com/" target="_blank"></a> -->
                         <img src="assets/images/seqBurger.jpg" alt="Sequelize Burger" data-toggle="modal" data-target="#seqBurgerModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Express Burger</h2>
                         <!-- <a href="https://mighty-atoll-63849.herokuapp.com/" target="_blank"></a> -->
                         <img src="assets/images/expBurger.jpg" alt="Express Burger" data-toggle="modal" data-target="#expBurgerModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Friend Finder</h2>
                         <a href="https://lit-scrubland-21785.herokuapp.com/" target="_blank"></a>
                         <img src="assets/images/friendfinder.gif" alt="Friend Finder" data-toggle="modal" data-target="#friendFinderModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>MySQL Store</h2>
                         <a href="https://github.com/mtking78/WHAMazon" target="_blank"></a>
                         <img src="assets/images/whamazon.gif" alt="MySQL Whamazon Store" data-toggle="modal" data-target="#whamazonModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Constructor Hangman</h2>
                         <a href="https://github.com/mtking78/Constructor-Hangman" target="_blank"></a>
                         <img src="assets/images/conHangman.jpg" alt="Constructor Hangman" data-toggle="modal" data-target="#conHangmanModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Liri Node App</h2>
                         <a href="https://github.com/mtking78/liri-node-app" target="_blank"></a>
                         <img src="assets/images/liriNode.jpg" alt="Liri Node App" data-toggle="modal" data-target="#liriNodeModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Firebase Scheduler</h2>
                         <a href="https://mtking78.github.io/TrainScheduler/" target="_blank"></a>
                         <img src="assets/images/firebaseScheduler.jpg" alt="Firebase Scheduler" data-toggle="modal" data-target="#firebaseSchedulerModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Gif Finder</h2>
                         <a href="https://mtking78.github.io/Giphy_API/" target="_blank"></a>
                         <img src="assets/images/gifFinder.jpg" alt="Gif Finder" data-toggle="modal" data-target="#giphyAPIModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
-                    <div class="item">
+                    <div class="carousel-item">
                         <h2>Gem Game</h2>
                         <a href="https://mtking78.github.io/week-4-game/" target="_blank"></a>
                         <img class="img-responsive" src="assets/images/gemGame.png" alt="Gem Game" data-toggle="modal" data-target="#gemGameModal">
-                        <p style="font-style:normal;">info about from github description</p>
+                        <p class="more-info">Click the image for more information.</p>
                     </div>
 
                     <!-- <div class="item">
@@ -244,23 +234,22 @@
                 </div>
 
                 <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
                 </a>
-                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
                 </a>
             </div>
         </div>
 
         <!-- Contact -->
         <div id="contact" class="container-fluid">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">Contact</h2>
             <p>Please feel free to reach out to me with questions and requests.  Let's get some work done!</p>
             <br>
-            <a href="mailto:mtking78@gmail.com" class="email">mtking78@gmail.com</a>
+            <a href="mailto:mtking78@gmail.com" class="contact-info">mtking78@gmail.com</a>
+            <span class="contact-info">(520)-444-9776</span>
             <!-- Code for auto-gmail -->
             <!-- <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mtking78@gmail.com" class="email" target="_blank">mtking78@gmail.com</a> -->
             <div class="row">
@@ -297,10 +286,14 @@
                 <!-- Modal content-->
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h4 class="modal-title">Modal Header</h4>
                     </div>
                     <div class="modal-body">
+                        <img class="modal-img" src="assets/images/beerRewards.png" alt="Beer Rewards">
+                        <a class="modal-livelink" href="https://mtking78.github.io/beerRewards/" target="_blank">Live Page
+                        </a>
+                        <a class="modal-codelink" href="https://github.com/mtking78/Beer-Rewards" target="_blank">&lt;code&gt;
+                        </a>
                         <p>Some text in the modal.</p>
                     </div>
                     <div class="modal-footer">
@@ -309,9 +302,7 @@
                 </div>
             </div>
         </div>
-
     <script>
-    // Function to collapse navbar dropdown on click.
     $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
         $(this).parents('.navbar-collapse').collapse('hide');
     });

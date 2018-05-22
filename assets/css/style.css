@@ -1,7 +1,12 @@
 /* Global */
+* {
+    box-sizing: border-box;
+}
+
 .section-title {
+    text-align: center;
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 4.25rem;
+    font-size: 3rem;
     font-weight: bolder;
     padding: 30px;
 }
@@ -9,29 +14,42 @@
 /* Navbar */
 /******************************************/
 
-/* Greeting */
-/******************************************/
-
 /* About Me */
 /******************************************/
-/* #about {
-} */
+#about {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.table-responsive,
+.table>tbody>tr>td {
+    border: none;
+}
+
+table>tbody>tr>td> i {
+    font-size: 1.5rem;
+}
+/******************************************/
 
 /* Portfolio */
 #portfolio {
-    color: #fff;
+    color: #000;
     text-align: center;
-    background-image: url("../images/pool_table.png");
+    /* background-image: url("../images/pool_table.png"); */
+    background-image: url("../images/mooning.png");
     background-repeat: repeat;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
 }
 
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: #fff;
+    border: 1px solid #000;
 }
 
 .carousel-indicators li {
-    border-color: #fff;
+    border-color: #000;
 }
 
 .carousel-indicators li.active {
@@ -42,7 +60,7 @@
     text-shadow: 0 2px 2px rgba(0,0,0,0.8);
 }
 
-.item h4 {
+.carousel-item h4 {
     font-size: 19px;
     line-height: 1.375em;
     font-weight: 400;
@@ -50,35 +68,54 @@
     margin: 70px 0;
 }
 
-.item span {
-    font-style: normal;
+.carousel-inner img {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 90%;
 }
 
-.item img {
-    width: 600px;
+.carousel-item img {
+    max-width: 800px;
     border: 3px solid #fff;
     border-radius: 10px;
     box-shadow: 10px 10px 5px #222;
+}
+
+.more-info {
+    margin-bottom: 45px;
 }
 /******************************************/
 
 /* Contact */
 #contact {
     text-align: center;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
 }
 
-#contact > .email {
+#contact > .contact-info {
     text-decoration: none;
     background-color: #000;
     color: #fff;
-    padding: 8px;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    margin: 25px 10px 0px;
     border: 2px solid #fff;
     border-radius: 8px;
+    display: inline-block;
 }
 
-.contact-links > a > i {
+/* .contact-links > a > i { */
+.fab {
     color: black;
-    margin: 0px 15px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    margin-top: 35px;
+    margin-right: 15px;
+}
+
+.contact-links > a {
+    text-decoration: none;
 }
 /******************************************/
 
@@ -88,8 +125,48 @@ footer {
     text-align: center;
     color: #fff;
     width: 100%;
-    padding: 30px;
+    padding: 40px;
     margin-top: 30px;
-    border-top: 10px solid ##fff;
+    border-top: 5px solid #000;
 }
 /******************************************/
+
+/* Modals */
+.modal-img {
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px #222;
+}
+
+.modal-livelink,
+.modal-codelink {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.modal-livelink {
+    float: left;
+}
+
+.modal-codelink {
+    float: right;
+}
+/******************************************/
+
+.fab:hover {
+    color: #fff;
+    background-color: #000;
+}
+#contact > .contact-info:hover {
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #000;
+}

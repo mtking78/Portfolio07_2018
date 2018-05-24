@@ -256,6 +256,7 @@
                     <!-- Placeholder -->
                 </div>
             </div>
+            <button class="contact-info" data-toggle="modal" data-target="#resumeModal">Resume</button>
         </div>
 
         <!-- Footer -->
@@ -595,7 +596,7 @@
             </div>
         </div>
 
-        <!-- template for Modal -->
+        <!-- template for additional Modal -->
         <!-- <div id="???" class="modal fade" role="dialog">
             <div class="modal-dialog">
 
@@ -627,6 +628,41 @@
             </div>
         </div> -->
 
+        <!-- Resume Modal -->
+        <div id="resumeModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg">
+
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">My Experience</h4>
+                    </div>
+
+                    <div class="modal-body" height="75%">
+                        <object data="assets/images/Resume_MattKing.pdf#page=2" type="application/pdf" width="100%" height="100%">
+                            <iframe src="assets/images/Resume_MattKing.pdf#page=2" width="100%" height="100%" style="border: none;">
+                            This browser does not support PDFs. Please download the PDF to view it: <a href="assets/images/Resume_MattKing.pdf">Download PDF</a>
+                            </iframe>
+                        </object>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="modal-btn">
+                            <a class="modal-livelink" href="https://www.linkedin.com/in/mtking78/" target="_blank">LinkedIn
+                            </a>
+                        </button>
+                        <button type="button" class="modal-btn">
+                            <a class="modal-codelink" href="assets/images/Resume_MattKing.pdf" download="Resume_MattKing">Download .pdf
+                            </a>
+                        </button>
+                        <button type="button" class="modal-btn" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
     <script>
     // Collapse navbar dropdown after click.
     $('.navbar-collapse a:not(.dropdown-toggle)').click(function(){
@@ -638,6 +674,7 @@
     // Remove links that don't actually link to anything
     .not('[href="#"]')
     .not('[href="#0"]')
+    .not('[href="#myCarousel"]')
     .click(function(event) {
         // On-page links
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
@@ -667,5 +704,6 @@
         }
     });
     </script>
+
     </body>
 </html>

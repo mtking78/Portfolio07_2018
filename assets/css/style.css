@@ -139,8 +139,12 @@ footer {
     box-shadow: 4px 4px 2px #222;
 }
 
-.modal-livelink,
-.modal-codelink {
+.modal-footer {
+    display: list-item;
+    text-align: center;
+}
+
+.modal-btn {
     text-decoration: none;
     background-color: #000;
     color: #fff;
@@ -152,12 +156,10 @@ footer {
     display: inline-block;
 }
 
-.modal-livelink {
-    float: left;
-}
-
+.modal-livelink,
 .modal-codelink {
-    float: right;
+    text-decoration: none;
+    color: #fff;
 }
 /******************************************/
 

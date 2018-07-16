@@ -90,13 +90,25 @@
                                 <img class="skill-icons" src="assets/images/nodejs.svg"></img>
                             </li>
                             <li class="list-inline-item">
-                                <img class="skill-icons" src="assets/images/mysql.svg"></img>
+                                <img class="skill-icons" src="assets/images/express.svg"></img>
+                            </li>
+                            <li class="list-inline-item">
+                              <img class="skill-icons" src="assets/images/mysql.svg"></img>
                             </li>
                             <li class="list-inline-item">
                                 <img class="skill-icons" src="assets/images/sequelize.svg"></img>
                             </li>
                             <li class="list-inline-item">
                                 <img class="skill-icons" src="assets/images/mongo.svg"></img>
+                            </li>
+                            <li class="list-inline-item">
+                                <img class="skill-icons" src="assets/images/react.svg"></img>
+                            </li>
+                            <li class="list-inline-item">
+                                <img class="skill-icons" src="assets/images/git.svg"></img>
+                            </li>
+                            <li class="list-inline-item">
+                                <img class="skill-icons" src="assets/images/heroku.svg"></img>
                             </li>
                         </ul>
                     </div>
@@ -112,7 +124,7 @@
             <!-- Carousel Display -->
             <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
                 <!-- Indicators -->
-                <ul class="carousel-indicators">
+                <!-- <ul class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#myCarousel" data-slide-to="1"></li>
                     <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -124,12 +136,18 @@
                     <li data-target="#myCarousel" data-slide-to="8"></li>
                     <li data-target="#myCarousel" data-slide-to="9"></li>
                     <li data-target="#myCarousel" data-slide-to="10"></li>
-                </ul>
+                </ul> -->
 
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
 
                     <div class="carousel-item active">
+                        <h2>Happy Hour Pal</h2>
+                        <img src="assets/images/happyHour.jpg" alt="Happy Hour Pal" data-toggle="modal" data-target="#happyHourModal">
+                        <p class="more-info">Click the image for more information.</p>
+                    </div>
+
+                    <div class="carousel-item">
                         <h2>Beer Rewards</h2>
                         <img src="assets/images/beerRewards.png" alt="Beer Rewards" data-toggle="modal" data-target="#beerRewardsModal">
                         <p class="more-info">Click the image for more information.</p>
@@ -263,6 +281,39 @@
         </footer>
 
         <!-- Modals -->
+
+          <!-- Happy Hour Modal -->
+          <div id="happyHourModal" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h4 class="modal-title">Happy Hour Pal</h4>
+                    </div>
+
+                    <div class="modal-body">
+                        <img class="modal-img" src="assets/images/happyHour.jpg" alt="Happy Hour Pal">
+                        <p>An app for users to discover, add, and update local happy hours in their community.</p>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="modal-btn">
+                            <a class="modal-livelink" href="https://happyhourpal.herokuapp.com/" target="_blank">Live Page
+                            </a>
+                        </button>
+                        <button type="button" class="modal-btn">
+                            <a class="modal-codelink" href="https://github.com/mtking78/happy-hour-pal" target="_blank">&lt;code&gt;
+                            </a>
+                        </button>
+                        <button type="button" class="modal-btn" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
 
         <!-- Beer Rewards Modal -->
         <div id="beerRewardsModal" class="modal fade" role="dialog">
